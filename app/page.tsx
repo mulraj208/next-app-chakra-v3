@@ -1,10 +1,17 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Button } from "@/components/ui/button";
+import { HStack } from "@chakra-ui/react";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <HStack>
+          <Button>Click me</Button>
+          <Button>Click me</Button>
+        </HStack>
+
         <Image
           className={styles.logo}
           src="https://nextjs.org/icons/next.svg"
